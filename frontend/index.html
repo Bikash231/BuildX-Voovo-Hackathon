@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Quiz Generator Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Quiz Generator</h1>
+
+  <section id="upload-section">
+    <h2>Upload PDF</h2>
+    <input type="file" id="fileInput" accept=".pdf" />
+    <input type="text" id="subtopicInput" placeholder="Enter subtopic name" />
+    <button id="uploadBtn">Upload</button>
+    <p id="uploadStatus"></p>
+  </section>
+
+  <section id="generate-section">
+    <h2>Generate Quizzes</h2>
+    <input type="text" id="quizSubtopicInput" placeholder="Subtopic to generate quizzes" />
+    <input type="number" id="numQuestions" placeholder="Number of questions" value="6" />
+    <button id="generateBtn">Generate</button>
+    <p id="generateStatus"></p>
+  </section>
+
+  <section id="quizzes-section">
+    <h2>Quizzes</h2>
+    <input type="text" id="fetchSubtopicInput" placeholder="Subtopic to fetch quizzes" />
+    <button id="fetchBtn">Fetch Quizzes</button>
+    <div id="quizList"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
